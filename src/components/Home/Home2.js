@@ -1,4 +1,5 @@
-import React from "react";import { Container, Row, Col } from "react-bootstrap";
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/ahmedM.jpg";
 import Tilt from "react-parallax-tilt";
 import {
@@ -14,21 +15,17 @@ function Home2() {
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
+            <h1 style={{ fontSize: "3em" }}>
               اسمح لي <span className="purple"> اعرفك </span> بنفسي
             </h1>
-            <p className="home-about-body">
+            <p className="home-about-body fs-2 lh-lg">
               خبير في انظمة الشباكات
               <i>{/* <b className="purple"> C++ and Python. </b> */}</i>
               <br />
-              <br />
               انجازاتي تتحدث عن نفسها
               <br />
-              <br />
               التميز عنواني
-              <i>
-                <b> الاحتراف من المسلمات التي اؤمن بها </b>
-              </i>
+              <b> الاحتراف من المسلمات التي اؤمن بها </b>
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -44,8 +41,8 @@ function Home2() {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>تابعني على</h1>
-            <p>
+            <h1 style={{ fontSize: "3em" }}>تابعني على</h1>
+            <p className="fs-2">
               كلمني في أي <span className="purple"> وقت </span> هتلاقيني موجود
             </p>
             <ul className="home-about-social-links">

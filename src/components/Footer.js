@@ -1,5 +1,4 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React from "react";import { Container, Row, Col } from "react-bootstrap";
 import {
   AiFillGithub,
   AiOutlineTwitter,
@@ -16,9 +15,12 @@ function Footer() {
       <Row>
         <Col md="4" className="footer-copywright"></Col>
         <Col md="4" className="footer-copywright">
-          <h3> © جميع الحقوق محفوظة {year} عمرو عبد الحميد</h3>
+          <h3 className="fs-2">
+            {" "}
+            © جميع الحقوق محفوظة {year} مهندس أحمد محمود
+          </h3>
         </Col>
-        <Col md="4" className="footer-body">
+        <Col md="4" className="footer-body fs-3">
           <ul className="footer-icons">
             <li className="social-icons">
               <a

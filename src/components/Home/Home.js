@@ -1,5 +1,4 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React from "react";import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/ahmedS.jpg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
@@ -12,7 +11,7 @@ function Home() {
         <Particle />
         <Container className="home-content">
           <Row>
-            <Col md={7} className="home-header">
+            <Col md={7} className="home-header text-right mb-5">
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 أهلا بالحميع
                 <span className="wave" role="img" aria-labelledby="wave">
@@ -21,16 +20,20 @@ function Home() {
               </h1>
 
               <h1 className="heading-name">
-                اسمي
+                مهندس
                 <strong className="main-name"> أحمد محمود </strong>
               </h1>
 
-              <div style={{ padding: 0, textAlign: "right" }}>
+              <div className="one" style={{ padding: 0, textAlign: "right" }}>
                 <Type />
               </div>
             </Col>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
+            <Col
+              md={5}
+              className="text-center mb-5"
+              style={{ paddingBottom: 20 }}
+            >
               <img
                 src={homeLogo}
                 alt="home pic"

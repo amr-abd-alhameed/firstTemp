@@ -1,5 +1,4 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React from "react";import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
@@ -11,22 +10,27 @@ function About() {
     <Container fluid className="about-section">
       <Particle />
       <Container>
-        <Row style={{ justifyContent: "center", padding: "10px" }}>
+        <Row
+          className="row-about"
+          style={{ justifyContent: "center", padding: "10px" }}
+        >
           <Col
-            md={7}
+            md={12}
+            lg={7}
             style={{
               justifyContent: "center",
               paddingTop: "30px",
               paddingBottom: "50px",
             }}
           >
-            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+            <h1 style={{ fontSize: "2.4em", paddingBottom: "20px" }}>
               من <strong className="purple"> أنا </strong>
             </h1>
             <Aboutcard />
           </Col>
           <Col
-            md={5}
+            md={12}
+            lg={5}
             style={{
               display: "flex",
               justifyContent: "center",

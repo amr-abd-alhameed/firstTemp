@@ -1,4 +1,5 @@
-import React from "react";import Card from "react-bootstrap/Card";
+import React from "react";
+import Card from "react-bootstrap/Card";
 import { ImPointLeft } from "react-icons/im";
 
 function AboutCard() {
@@ -6,7 +7,7 @@ function AboutCard() {
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
+          <p className="p-about fs-2" style={{ textAlign: "justify" }}>
             ازيكم يا شباب <span className="purple">زميلكم أحمد </span>
             من <span className="purple"> الفيوم </span>
             <br /> رابعه اتصالات - جامعة الفيوم متخصص في هندسة الشبكات و أنطمة
@@ -18,13 +19,13 @@ function AboutCard() {
             بعض هواياتي
           </p>
           <ul>
-            <li className="about-activity">
+            <li className="about-activity  fs-3">
               <ImPointLeft style={{ marginLeft: "10px" }} /> تطوير الشبكات
             </li>
-            <li className="about-activity">
+            <li className="about-activity fs-3">
               <ImPointLeft style={{ marginLeft: "10px" }} /> تصميم الربوتات
             </li>
-            <li className="about-activity">
+            <li className="about-activity fs-3">
               <ImPointLeft style={{ marginLeft: "10px" }} /> تصميم طائرات بدون
               طيار
             </li>

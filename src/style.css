@@ -1,5 +1,4 @@
-html {
-  --section-background-color: linear-gradient(
+html {  --section-background-color: linear-gradient(
     to bottom left,
     rgba(17, 16, 16, 0.582),
     rgba(12, 8, 24, 0.904)
@@ -140,6 +139,11 @@ button:focus {
   opacity: 0.9 !important;
 }
 
+@media (max-width: 992px) {
+  .navbar-nav {
+    margin: auto !important;
+  }
+}
 @media (max-width: 767px) {
   .navbar {
     padding: 1rem 2rem !important;
@@ -167,6 +171,11 @@ button:focus {
 @media (max-width: 767px) {
   .nav-link {
     padding: 0.7rem 1rem !important;
+  }
+  .container-about {
+    justify-content: right !important;
+    padding: 0px !important;
+    margin: 0px !important;
   }
 }
 
@@ -289,11 +298,21 @@ button:focus {
   color: #b562d6 !important;
 }
 
+@media (max-width: 992px) {
+  .home-header {
+    text-align: center !important;
+  }
+  .one {
+    text-align: center !important;
+    height: 33.6px;
+  }
+}
 @media (max-width: 767px) {
   .Typewriter__wrapper {
     font-size: 1.4em !important;
     font-weight: 500 !important;
-    position: absolute !important;
+    /* position: absolute !important; */
+    /* text-align: center !important; */
   }
   .Typewriter__cursor {
     display: none !important;
@@ -322,13 +341,13 @@ button:focus {
   color: white !important;
   padding-top: 100px !important;
   padding-bottom: 20px !important;
-  text-align: center;
+  text-align: right;
 }
 
 .home-about-body {
   padding-top: 50px;
   font-size: 1.2em !important;
-  text-align: left;
+  text-align: right;
 }
 
 .home-about-social {
@@ -391,6 +410,12 @@ button:focus {
 
 .icon-colour {
   color: #700c86 !important;
+}
+@media (max-width: 768px) {
+  .home-about-description,
+  .home-about-body {
+    text-align: center;
+  }
 }
 
 /* --------- */
@@ -464,6 +489,17 @@ button:focus {
   transition: all 0.4s ease 0s !important;
 }
 
+@media (max-width: 992px) {
+  .row-about {
+    flex-direction: column;
+  }
+  .p-about {
+    text-align: center !important;
+  }
+  .about-activity {
+    text-align: center !important;
+  }
+}
 @media (max-width: 767px) {
   .tech-icons {
     margin: 10px !important;
@@ -488,7 +524,7 @@ button:focus {
 
 .about-activity {
   list-style: none !important;
-  text-align: right !important;
+  text-align: right;
   padding-left: 1px !important;
 }
 
